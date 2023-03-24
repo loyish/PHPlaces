@@ -1,0 +1,285 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+span{
+  color: white;
+}
+/*Navigation Bar*/
+.nav-container{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+.nav-container a{
+  display: flex;
+  position: relative;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .5s ease;
+  padding: 8px 15px;
+}
+.nav-container a:hover{
+  color: black;
+  transition: .4s; 
+  box-shadow: 0 0 10px;
+  border-radius: 15px;
+}
+
+/* Hero Section */
+.hero-container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  background-image: linear-gradient(transparent, white 95%), url(assets/pexels-krisia-902288.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero-container h1{
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 80px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Optional Button */
+button{
+  height: 7vh;  
+  font-size: 25px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+
+
+}
+button:hover{
+  color: black;
+  transition: .4s; 
+  box-shadow: 0 0 50px;
+}
+.hero-button{
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 7vh;  
+  font-size: 25px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+/* Places Section */
+.places-container{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(assets/Banaue\ Rice\ Terraces.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: change 10s infinite ease-in-out;
+}
+.places-card{
+  display: flex;
+  flex-flow: row wrap;
+  height: 55vh;;
+  width: 50%;
+  padding: 20px 35px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 15px;
+  position: relative;
+  text-align: center;
+}
+.places-card img{
+  border-radius: 10px;
+  display: inline-block;
+  background-size: contain;
+  height: 43vh;
+  width: 35vh;
+  border-radius: 30px;
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left   var(--_i,0%) top    var(--_g),
+    bottom var(--_i,0%) left   var(--_g),
+    top    var(--_i,0%) right  var(--_g),
+    right  var(--_i,0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale();
+  transition: .3s linear;
+  cursor: pointer;
+}
+.places-card img:hover {
+  --_i: 10%;
+  filter: grayscale(0);
+}
+.places-card h3{
+  color: beige;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.places-card h3:hover{
+  color: red;
+}
+
+/* About Section */
+.about-container{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 130vh;
+  padding-top: 50px;
+  position: relative;
+  background-image: url(assets/ph.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+.about-container h2{
+  position: relative;
+  display: flex;
+  width: auto;
+  color: beige; 
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  margin-left: 660px;
+}
+.about-container p{
+  position: relative;
+  display: flex;
+  width: 55%;
+  color: beige  ;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size:  15px;
+  margin-bottom: 25px;
+  text-align: justify;
+  font-weight: 700;
+  margin-left: 550px;
+}
+/* Footer Container */
+.footer-container{
+  display: flex; 
+  flex-flow: column wrap;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  gap: 1em;
+}
+.footer-container a{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all .5s ease;
+  padding: 8px 15px;
+}
+.footer-container a:hover{
+  color: black;
+  transition: .4s; 
+  box-shadow: 0 0 10px;
+  border-radius: 15px;
+}
+.credits-container{
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  padding-bottom: 15px;
+}
+.footer-nav{
+  display: flex;
+}
+
+/* Background change picture in Places Section */
+@keyframes change{
+  0%  
+  {
+    background-image: url(assets/Mayon\ Volcano.jpg);
+  }
+  50%  
+  {
+    background-image: url(assets/El\ Nido.jpg);
+  }
+  100%  
+  {
+    background-image:  url(assets/Chocolate\ Hills.jpg);
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .nav-container a{
+    font-size: 13px;
+  }
+  .hero-container{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .places-container{
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .about-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap
+  }
+  .about-container h2{
+    margin-left: 150px;
+    font-size: 20px;
+  }
+  .about-container p{
+    margin-left: 150px;
+    font-size: 10px;
+  }
+  .about-text{
+    width: 100%;
+    height: auto;
+    
+  }
+  
+}
+
+
+
