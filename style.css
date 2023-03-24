@@ -53,7 +53,7 @@ span{
   height: 100vh;
   position: relative;
   justify-content: center;
-  background-image: linear-gradient(transparent, white 95%), url(assets/pexels-krisia-902288.jpg);
+  background-image: linear-gradient(transparent, white 95%), url(pexels-krisia-902288.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -102,7 +102,7 @@ button:hover{
   padding-top: 100px;
   position: relative;
   overflow: hidden;
-  background-image: url(assets/Banaue\ Rice\ Terraces.jpg);
+  background-image: url(Banaue\ Rice\ Terraces.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,7 +160,7 @@ button:hover{
   height: 130vh;
   padding-top: 50px;
   position: relative;
-  background-image: url(assets/ph.jpg);
+  background-image: url(ph.jpg);
   background-size: cover;
   background-position: center;
 
@@ -230,15 +230,15 @@ button:hover{
 @keyframes change{
   0%  
   {
-    background-image: url(assets/Mayon\ Volcano.jpg);
+    background-image: url(Mayon\ Volcano.jpg);
   }
   50%  
   {
-    background-image: url(assets/El\ Nido.jpg);
+    background-image: url(El\ Nido.jpg);
   }
   100%  
   {
-    background-image:  url(assets/Chocolate\ Hills.jpg);
+    background-image:  url(Chocolate\ Hills.jpg);
   }
   
 }
