@@ -16,7 +16,7 @@ span{
 .nav-container{
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
+  width: 80%;
   align-items: center;
   position: relative;
   justify-content: space-between;
@@ -45,8 +45,8 @@ span{
   border-radius: 15px;
 }
 .nav-container img{
-  height: 4%;
-  width: 8%;
+  height: 20%;
+  width: 40%;
 }
 
 /* Hero Section */
@@ -57,7 +57,7 @@ span{
   height: 100vh;
   position: relative;
   justify-content: center;
-  background-image: linear-gradient(transparent, white 95%), url(pexels-krisia-902288.jpg);
+  background-image: linear-gradient(transparent, white 95%), url(assets/pexels-krisia-902288.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -68,7 +68,6 @@ span{
   text-align: center;
   justify-content: center;
 }
-
 /* Optional Button */
 button{
   height: 7vh;  
